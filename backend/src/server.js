@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
@@ -54,3 +55,21 @@ mongoose
   .catch((err) => {
     console.error("MongoDB connection error:", err.message);
   });
+=======
+import dotenv from "dotenv";
+dotenv.config();
+
+import app from "./app.js";
+import { connectDB } from "./config/db.js";
+
+const PORT = process.env.PORT || 5000;
+
+async function start() {
+  await connectDB();
+  app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
+}
+
+start();
+>>>>>>> 2353d74ebe6266f313eb60bb016f156df41b2698

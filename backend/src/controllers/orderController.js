@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import { Cart } from "../models/Cart.js";
 import Order from "../models/Order.js";
+=======
+import Order from "../models/Order.js";
+import Cart from "../models/Cart.js";
+>>>>>>> 2353d74ebe6266f313eb60bb016f156df41b2698
 
 export async function createOrder(req, res, next) {
   try {

@@ -12,7 +12,10 @@ function sanitizeUser(user) {
     id: user._id,
     name: user.name,
     email: user.email,
+<<<<<<< HEAD
     role: user.role,
+=======
+>>>>>>> 2353d74ebe6266f313eb60bb016f156df41b2698
   };
 }
 
@@ -69,4 +72,8 @@ export async function getMe(req, res, next) {
   } catch (err) {
     next(err);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2353d74ebe6266f313eb60bb016f156df41b2698
