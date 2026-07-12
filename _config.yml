@@ -1,4 +1,15 @@
 exclude:
   - node_modules
+  - FoodExpressFinal/node_modules
+  - FoodExpressFinal/**/.git
   - .git
   - .gitignore
+  - backend
+  - "*.gem"
+  - Gemfile
+  - Gemfile.lock
+
+jekyll_compose:
+  default_front_matter:
+    posts:
+      description:
